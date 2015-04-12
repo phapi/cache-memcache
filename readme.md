@@ -46,7 +46,7 @@ $cache->flush();
 
 
 ## License
-Phapi Memcache is licensed under the MIT License - see the LICENSE file for details
+Phapi Memcache is licensed under the MIT License - see the [license.md](https://github.com/phapi/cache-memcache/blob/master/license.md) file for details
 
 ## Contribute
 Contribution, bug fixes etc are [always welcome](https://github.com/phapi/cache-memcache/issues/new).
