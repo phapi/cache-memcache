@@ -1,0 +1,29 @@
+language: php
+
+php:
+  - 5.5
+  - 5.6
+  - 7.0
+  - hhvm
+
+matrix:
+  allow_failures:
+    - php: hhvm
+    - php: 7.0
+
+services:
+  - memcached
+
+install: composer install --dev
+
+before_script:
+  - sh -c 'if [ "$TRAVIS_PHP_VERSION" != "hhvm" ]; then echo "extension=memcache.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi;'
+
+after_script:
+  - vendor/bin/test-reporter --stdout > codeclimate.json
+  - "curl -X POST -d @codeclimate.json -H 'Content-Type: application/json' -H 'User-Agent: Code Climate (PHP Test Reporter v0.1.1)' https://codeclimate.com/test_reports"
+
+notifications:
+  email: false
+  slack:
+    secure: "bNwTztUCIF4HgKnaIPuqe8qGEUgx+7AEG55AyW1yKgd7vpYHMqzTh7kEFOx6Cjf9AapYGoO7i/WzOnG4M0CusRwPV7YJvLr+yqqXqNh2ksSHWIzR8+Q13tCpxYiTz2q9EFUls5ISAuy/+MhSSSiAFgA0Xud71Vd4x0opgn8wkuM="
