@@ -2,7 +2,8 @@
 
 namespace Phapi\Cache;
 
-use Phapi\Contract\Cache;
+use Phapi\Contract\Cache\Cache;
+
 
 /**
  * Class Memcache
@@ -51,6 +52,7 @@ class Memcache implements Cache
      * @param array $servers
      * @param bool $compression
      * @param int $expire
+     * @throws \Exception
      */
     public function __construct($servers = [], $compression = false, $expire = 3600)
     {

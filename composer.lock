@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phapi/contract.git",
-                "reference": "c1da96ab931318e0bbb4c2a2818d03a7b151d8c9"
+                "reference": "ba5c25bcc1cc80d2fc0185b095df9d5664394d70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phapi/contract/zipball/c1da96ab931318e0bbb4c2a2818d03a7b151d8c9",
-                "reference": "c1da96ab931318e0bbb4c2a2818d03a7b151d8c9",
+                "url": "https://api.github.com/repos/phapi/contract/zipball/ba5c25bcc1cc80d2fc0185b095df9d5664394d70",
+                "reference": "ba5c25bcc1cc80d2fc0185b095df9d5664394d70",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,7 @@
                 "interfaces",
                 "phapi"
             ],
-            "time": "2015-04-12 12:38:04"
+            "time": "2015-04-13 10:49:00"
         }
     ],
     "packages-dev": [
