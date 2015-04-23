@@ -25,7 +25,11 @@
   },
   "autoload": {
     "psr-4": {
-      "Phapi\\Cache\\": "src/Phapi/Cache/",
+      "Phapi\\Cache\\": "src/Phapi/Cache/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
       "Phapi\\Tests\\Cache\\": "tests/Phapi/Cache/"
     }
   }
