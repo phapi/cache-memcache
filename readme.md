@@ -1,5 +1,7 @@
 # Phapi Memcache
 
+**Please note that PHP 7 isn't supported until there is a working Memcached extension for PHP 7.**
+
 Phapi Memcache is a cache package using Memcache(d) as backend.
 
 
