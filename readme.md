@@ -13,7 +13,7 @@ $ composer require phapi/cache-memcache:1.*
 Second, update your configuration to look something like this:
 ```php
 <?php
-$$container['cache'] = function ($container) {
+$container['cache'] = function ($container) {
     return new \Phapi\Cache\Memcache($servers = [
         [
             'host' => 'localhost',
