@@ -4,15 +4,18 @@
 
 Phapi Memcache is a cache package using Memcache as backend.
 
-
 <blockquote>Phapi has one important rule regarding cache: A working cache should **not** be a requirement for the application to work. So if Phapi is unable to connect to the cache backend it wont stop the execution. Instead the configured cache will be replaced with a dummy cache, <code>new NullCache()</code>.</blockquote>
 
-## Configuration
-You need to make two modifications to enable Memcache in Phapi. First, add the needed dependency to composer.json.
+## Installation
+The package is **not** installed by default by the Phapi framework. Add the package as a dependency in composer to install the package.
+
 ```shell
 $ composer require phapi/cache-memcache:1.*
 ```
-Second, update your configuration to look something like this:
+
+## Configuration
+Configure the package and add it to the container to enable it.
+
 ```php
 <?php
 $container['cache'] = function ($container) {
@@ -24,6 +27,7 @@ $container['cache'] = function ($container) {
     ]);
 };
 ```
+Add as many memcache servers as you want by extending the array.
 
 
 ## General cache usage
