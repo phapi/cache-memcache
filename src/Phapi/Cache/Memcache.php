@@ -4,7 +4,6 @@ namespace Phapi\Cache;
 
 use Phapi\Contract\Cache\Cache;
 
-
 /**
  * Class Memcache
  *
