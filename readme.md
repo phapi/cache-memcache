@@ -27,6 +27,7 @@ $container['cache'] = function ($container) {
 ```
 Add as many memcache servers as you want by extending the array.
 
+See the [configuration documentation](http://phapi.github.io/started/configuration/) for more information about how to configure the integration with the Phapi Framework.
 
 ## General cache usage
 ```php
@@ -46,7 +47,6 @@ $cache->clear('test');
 // Flush the cache
 $cache->flush();
 ```
-
 
 ## License
 Phapi Memcache is licensed under the MIT License - see the [license.md](https://github.com/phapi/cache-memcache/blob/master/license.md) file for details
