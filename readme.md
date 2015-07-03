@@ -27,7 +27,7 @@ $container['cache'] = function ($container) {
 ```
 Add as many memcache servers as you want by extending the array.
 
-See the [configuration documentation](http://phapi.github.io/started/configuration/) for more information about how to configure the integration with the Phapi Framework.
+See the [configuration documentation](http://phapi.github.io/docs/started/configuration/) for more information about how to configure the integration with the Phapi Framework.
 
 ## General cache usage
 ```php
