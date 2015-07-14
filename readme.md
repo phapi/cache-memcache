@@ -1,5 +1,9 @@
 # Memcache Cache Provider
 
+[![Build status](https://img.shields.io/travis/phapi/cache-memcache.svg?style=flat-square)](https://travis-ci.org/phapi/cache-memcache)
+[![Code Climate](https://img.shields.io/codeclimate/github/phapi/cache-memcache.svg?style=flat-square)](https://codeclimate.com/github/phapi/cache-memcache)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/phapi/cache-memcache.svg?style=flat-square)](https://codeclimate.com/github/phapi/cache-memcache/coverage)
+
 Memcache is a cache package using Memcache as backend.
 
 <blockquote>Phapi has one important rule regarding cache: A working cache should **not** be a requirement for the application to work. So if Phapi is unable to connect to the cache backend it wont stop the execution. Instead the configured cache will be replaced with a dummy cache, <code>new NullCache()</code>.</blockquote>
