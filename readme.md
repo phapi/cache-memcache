@@ -8,6 +8,15 @@ Memcache is a cache package using Memcache as backend.
 
 <blockquote>Phapi has one important rule regarding cache: A working cache should **not** be a requirement for the application to work. So if Phapi is unable to connect to the cache backend it wont stop the execution. Instead the configured cache will be replaced with a dummy cache, <code>new NullCache()</code>.</blockquote>
 
+## Memcache or Memcached?
+Please note that there are two cache provider packages available: [phapi/cache-memcache](https://github.com/phapi/cache-memcache) and [phapi/cache-memcached](https://github.com/phapi/cache-memcached). The difference between the packages is the PHP extension they use.
+
+### So which one should you use?
+It depends on two things:
+
+- Which extension do you have installed?
+- PHP version. Both the [Memcache](http://php.net/manual/en/book.memcache.php) extension and the [Memcached](http://php.net/manual/en/book.memcached.php) exists for PHP 5.6 and HHVM. But according to the [gophp7 project extension catalog](https://github.com/gophp7/gophp7-ext/wiki/extensions-catalog) only Memcached will be updated to PHP 7.
+
 ## Installation
 The package is **not** installed by default by the Phapi framework. Add the package as a dependency in composer to install the package.
 
